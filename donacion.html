@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animales S.O.S</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+		<nav>
+ 		 <div class="logo">
+           <img src="imagenes/logo.png" alt="logo" height="70%">
+           
+        </div>
+  		<a class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <h1>Donaciones</h1>
+        <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="rescates.html">Albergue</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="contacto.html">Voluntario</a>
+    
+     </div>	
+ 	</nav>
+	</header>
+  <div class="don">
+    <h2>Formulario de Donacion</h2>
+    <p>Revisar su envio</p>
+    <section>
+ <div class="container"></div>
+  <form>
+    <div class="fila">
+      <div class="col-25">
+      <label>Nombre: </label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="nom" placeholder="Nombre">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-25">
+      <label>Clave: </label>
+      </div>
+      <div class="col-75">
+        <input type="password" name="clave" placeholder="Ingrese su Clave" minlength="8" maxlength="15">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-25">
+      <label>Correo </label>
+      </div>
+      <div class="col-75">
+        <input type="email" name="correo" placeholder="Correo Electronico">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-25">
+      <label>Pais: </label>
+      </div>
+      <div class="col-75">
+        <select name="pais">
+          <option>Bolivia</option>
+          <option>Peru</option>
+          <option>Argentina</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div class="col-25">
+      <label>Tipo de Donación </label>
+      </div>
+      <div class="col-75">
+        <input type="radio" name="Tipo" value="mensual">Mensual<br>
+        <input type="radio" name="Tipo" value="trimestral">Trimestral<br>
+        <input type="radio" name="Tipo" value="Semestral">Semestral<br>
+        <input type="radio" name="Tipo" value="Anual">Anual<br>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-25">
+      <label>Monto: </label>
+      </div>
+      <div class="col-75">
+        <input type="number" name="monto" min="1" placeholder="Bs.">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-25">
+      <label>Fecha: </label>
+      </div>
+      <div class="col-75">
+        <input type="date" name="fecha" min="2021-10-01">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-25">
+      <label>Comentarios </label>
+      </div>
+      <div class="col-75">
+        <textarea></textarea>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col-50">
+      <input type="submit" name="enviar" value="Enviar Formulario">
+      </div>
+      <div class="col-50">
+        <input type="reset" name="clear" value="Limpiar Formulario">
+      </div>
+    </div>
+    
+  </form>
+  </div>
+</section>
+  </div>
+	<footer>
+      <div class="footer-social">
+      <a href="https://twitter.com/?lang=es" ><img src="imagenes/twi.png" height="40px"></a>
+      <a href="https://www.facebook.com//?lang=es" ><img src="imagenes/face.png" height="40px"></a>
+      <a href="https://www.instagram.com/?hl=es" ><img src="imagenes/ins.png" height="40px"></a>
+      <div class="textf"> &copy;  Todos Los Derechos Reservados de Animal S.O.S </div></div>
+</footer>
+  <script type="text/javascript">
+        $(".btn").on("click", function(){
+            $('.menu').toggleClass("show");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+h1{
+    color: #f3a505;
+    text-align: justify;
+    font-family: 'banners', cursive;
+    text-shadow: 3px 2px #5b3a29;
+    font-size: 35px;
+}
+h2{
+    color: #f3a505;
+    text-align: justify;
+    text-shadow: 2px 1px #5b3a29;
+    font-size: 25px;
+    text-align: center;
+}
+    .don{
+        padding-left: 20px;
+        color: #f3a505;
+        text-shadow: 2px 1px #5b3a29;
+        font-size: 25px;
+    }
+a {
+    background-color: #a4681c;
+  color: white;
+  padding: 0 4px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #fcba03;
+  color: white;
+  margin-right: 20px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+nav{
+    flex: 2;
+    margin-top: 30px;
+}
+
+.menu{
+    position: absolute;
+    right: 50px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.logo {
+   flex: 1;
+    font-weight: 200;
+    margin: 30px;
+    background-size: contain;
+    width: 40%;
+    height: 80px;
+    float: left;
+}
+.btn {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 80px;
+}
+.btn:hover > span {
+    background-color: white;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+@media only screen and (max-width: 550px){
+        nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 130px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
+/*pie de pagina*/
+footer {
+    background-color: #B08604;
+ margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+footer .textf{
+    padding: 1%;
+
+}
+.footer-social {
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #202C45;
+    background: #FFB200;
+    border-radius: 40px;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+.footer-social a:last-child {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+    background: #ffffff;
+    padding: 10px;
+}
+
+/*formulario */
+
+
+input[type=text], input[type=email], input[type=number],select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  resize: vertical;
+}
+input[type=radio] {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+input[type=password] {
+  width: 70%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit],  input[type=reset]{
+  background-color: #a4681c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #fcba03;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+
+}
+.col-25 {
+    color: #f3a505;
+    text-shadow: 1.5px 1px #5b3a29;
+    font-size: 20px;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=reset]  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+header{
+     background: black;
+     height: 170px;
+     width: 100%;
+     overflow:hidden;
+    background-position: bottom left;
+}
+body{
+    background: #ffefdb;
+    background-repeat: no-repeat;
+    background-size: 100%;
+     margin: 0px;
+}
+
+
+
+/*team */
+
+.pet {
+    padding-left: 20px;
+    text-align: left;
+}
+#columnas{
+   column-count:4;
+   column-gap:20px;
+   list-style: none;
+}
+.iman{
+    width: 100%;
+    position: relative;
+}
+.vid{
+    margin: 20px;
+}
+p{
+    font-size: 20px;
+    color: black ;
+    text-shadow: 1px 1px #f3a505;
+}
+.imge{
+    text-align: left;
+    padding: 10px;
+}
+h3{
+    color: black;
+    text-shadow: 1px 1px white;
+}
+/*row noticias*/
+
+.row{
+    padding: 2%;
+}
+.row .col-sm-8{
+    padding-left: 3%;
+    text-align: justify;
+    resize: vertical;
+        padding-top: 4%;
+}
+.row .col-sm-8 .p{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+/*pop up------alber*/
+
+.button {
+  color: #fff;
+  size: 0px;
+  padding:0% ;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #75560F;
+}
+.popup .close:hover {
+  color: #D80606;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
